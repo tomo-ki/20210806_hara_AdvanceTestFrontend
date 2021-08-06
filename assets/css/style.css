@@ -336,10 +336,10 @@ input[type=radio]:checked + .radio__label::after {
 }
 .admin__data-mouseOver{
   display: none;
-  width: 80%;
+  width: 90%;
   background-color: white;
   position: absolute;
-  top: 10px;
+  top: 5px;
   left: 0;
   z-index: 10;
   padding: 10px;
