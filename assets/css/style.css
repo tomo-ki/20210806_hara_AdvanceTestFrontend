@@ -1,0 +1,384 @@
+li{
+  list-style: none;
+}
+.flex{
+  display: flex;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.button{
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 16%;
+}
+.hover:hover{
+  cursor: pointer;
+  opacity: 0.5;
+}
+.require::after{
+  content: "※";
+  color: red;
+}
+
+/* ラジオボタン */
+input[type=radio] {
+  display: none;
+}
+.radio__label {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0px 50px;
+  position: relative;
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 5%;
+}
+.radio__label::before {
+  background: #fff;
+  border: 1px solid #CCCCCC;
+  border-radius: 50%;
+  content: '';
+  display: block;
+  height: 40px;
+  width: 40px;
+  left: 17px;
+  position: absolute;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+.radio__label::after {
+  background: black;
+  border-radius: 50%;
+  content: '';
+  display: block;
+  height: 12px;
+  width: 12px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 17px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+input[type=radio]:checked + .radio__label::after {
+  opacity: 1;
+}
+
+.validation-provider{
+  width: 100%;
+  display: table-row-group;
+}
+.error{
+  color: red;
+  font-size: 12px;
+  height: 18px;
+  line-height: 18px;
+}
+
+
+
+
+
+
+/* index */
+#index,
+#confirm{
+  align-items: center;
+  width: 100%;
+  padding: 30px 0 50px;
+}
+.contact__heading,
+.confirm__heading{
+  font-size: 24px;
+  text-align: center;
+  margin: 20px 0;
+}
+.contact__content,
+.confirm__content{
+  width: 100%;
+  align-items: center;
+}
+.contact__table,
+.confirm__table{
+  width: 80%;
+  /* background-color: orange; */
+}
+.contact__table th,
+.confirm__table th{
+  /* background-color: pink; */
+  line-height: 40px;
+  width: 25%;
+  text-align: left;
+  vertical-align: top;
+}
+.contact__form-th--gender{
+  vertical-align: middle!important;
+}
+.contact__table td,
+.confirm__table td{
+  /* background-color: yellow; */
+  width: 75%;
+}
+.contact__form{
+  width: 99%;
+  height: 40px;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+}
+.contact__form-name{
+  width: 48%;
+}
+.contact__table .contact__form-name:last-child{
+  margin-left: 2%;
+}
+.contact__form-genderarea{
+  padding: 20px 0;
+}
+.contact__form-gender{
+  width: 5%;
+  color: black;
+}
+.contact__form-postcode{
+  width: 45%;
+}
+.button-postcode{
+  width: 45%;
+  margin-left: 2%;
+}
+.contact__form-opinion{
+  height: 120px;
+}
+.example{
+  padding-left: 2%;
+  color: #CCCCCC;
+  font-size: 14px;
+}
+.example .example__name:last-child{
+  margin-left: 42%;
+}
+.label-postcode{
+  width: 5%;
+  text-align: center;
+  display: inline-block;
+}
+.example__postcode{
+  margin-left: 6%;
+}
+.button-contact{
+  margin: 30px 0 0;
+}
+.error-postcode{
+  margin-left: 7%;
+}
+.name__error{
+  width: 100%;
+}
+.name__error-des:nth-child(2){
+  padding-left: 68%;
+}
+.button-contact:disabled{
+  background-color: #BBBBBB;
+}
+.button-contact:disabled:hover{
+  cursor:unset;
+  opacity: 1;
+}
+
+
+
+
+
+/* confirm */
+.confirm__table th{
+  vertical-align: top;
+  padding: 30px 0;
+}
+.confirm__table td{
+  padding: 30px 0;
+}
+.toHomeLink{
+  color: black;
+  margin-top: 5px;
+}
+
+/* thanks */
+#thanks {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.thanks__text{
+  margin: 30px 0;
+}
+
+/* admin */
+#admin{
+  align-items: center;
+  width: 100%;
+  padding: 50px 0 100px;
+}
+.admin__heading{
+  margin: 0 0 30px;
+}
+.admin__search{
+  align-items: center;
+  width: 90%;
+  border: 1px solid black;
+  padding: 30px 0;
+}
+.admin__search-table{
+  width: 100%;
+  padding: 0 40px 10px;
+  font-size: 12px;
+}
+.admin__search input{
+  height: 40px;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  width: 200px;
+}
+.admin__label{
+  width: 30%;
+  padding-left: 50px;
+  padding-right: 0;
+  margin: 0;
+}
+.admin__search-cell{
+  padding: 3px 0;
+}
+.admin__search-cell1{
+  text-align: left;
+  width: 15%;
+}
+.admin__search-cell2{
+  width: 20%;
+}
+.admin__search-cell3{
+  width: 10%;
+}
+.admin__search-cell3 span{
+  margin: 0 3%;
+}
+.admin__search-cell4{
+  width: 55%;
+}
+.admin__search-reset{
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 0;
+  font-size: 14px;
+  height: 14px;
+  line-height: 14px;
+  margin-top: 10px;
+}
+
+.admin__data{
+  align-items: center;
+  width: 100%;
+}
+.admin__data-table{
+  width: 90%;
+  text-align: left;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+.admin__data-tr1{
+  border-bottom: 1px solid black;
+}
+.admin__data-cell{
+  padding: 15px 0 0;
+  padding-left: 2%;
+}
+.admin__data-cell1{
+  /* background-color: pink; */
+  width: 7%;
+  padding-left: 3%;
+}
+.admin__data-cell2{
+  /* background-color: orange; */
+  width: 15%;
+}
+.admin__data-cell3{
+  /* background-color: yellow; */
+  width: 10%;
+}
+.admin__data-cell4{
+  /* background-color: greenyellow; */
+  width: 18%;
+}
+.admin__data-cell5{
+  /* background-color: goldenrod; */
+  width: 40%;
+}
+.admin__data-cell6{
+  width: 10%;
+  /* background-color: aqua; */
+  padding-left: 0;
+  text-align: center;
+}
+.button__admin-delete{
+  width: 60%;
+  height: 24px;
+}
+.admin__data-td5{
+  position: relative;
+}
+.admin__data-mouseOver{
+  display: none;
+  width: 80%;
+  background-color: white;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: 10;
+  padding: 10px;
+  font-size: 12px;
+  box-shadow: 0px 0px 10px #AAAAAA;
+}
+.admin__data-td5:hover .admin__data-mouseOver{
+  display: inline-block;
+}
+
+
+
+/* Pagination */
+.pagination__area {
+  width: 90%;
+  padding: 30px 0 15px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+.pagination__countRight{
+  margin: 0 20px;
+}
+.pagination{
+  text-align: center;
+}
+.page-item{
+  border: 1px solid #CCCCCC;
+  border-collapse: collapse;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+.page-link{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+.active{
+  background-color: black;
+  color: white;
+}
